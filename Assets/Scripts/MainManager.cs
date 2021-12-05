@@ -61,6 +61,11 @@ public class MainManager : MonoBehaviour
             }
         }
     }
+    void StartGame()
+    {
+        SceneManager.LoadScene(1);
+
+    }
 
     void AddPoint(int point)
     {
@@ -72,5 +77,9 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+    }
+    private void Awake()
+    {
+        
     }
 }
